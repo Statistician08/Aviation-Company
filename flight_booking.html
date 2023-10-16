@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="booking.css"> 
+</head>
+<body>
+    <div class="banner">
+        <ul class="banner_list">
+        
+            <!-- Airline banner -->
+            <li> 
+                <img src="images/banner.jpg" alt="Ikarus Airlines Logo">
+            </li>
+            
+            <!-- Banner buttons: home, status_level, registration -->
+            <li>
+                <ul class="banner_buttons">
+                    
+                    <li id="home">
+                        <a href="main.html">
+                            <button> HOME </button>
+                        </a>
+                    </li>
+                    
+                    
+                    <li id="register">
+                        <a href="registration.html">
+                            <button> <b> REGISTRATION </b> </button>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <h1>Flight Booking</h1>
+
+    <!-- Flight search form -->
+    <form id="flightSearchForm">
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="UnitedStates">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="UnitedKingdom">United Kingdom</option>
+            <option value="India">India</option>
+            <option value="Brazil">Brazil</option>
+            <option value="SouthAfrica">South Africa</option>
+            <option value="Japan">Japan</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+        </select>
+
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <!-- State options will be populated dynamically based on the selected country -->
+        </select>
+
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate">
+
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate">
+
+        <button type="submit">Search Flights</button>
+    </form>
+
+    <!-- Display flight results dynamically -->
+    <div id="flightResults">
+        <!-- Flight schedules, destinations, and pricing will be displayed here -->
+    </div>
+
+    <script src="index.js"></script> <!-- Add your JavaScript file here -->
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Flight Booking Section Styles */
+.banner {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  height: 94px;
+  background-color: #0072B5; /* Deep Sky Blue */
+}
+
+.banner li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+  background-color: #0072B5; /* Deep Sky Blue */
+}
+
+.banner li img {
+  max-width: 100%;
+  border-radius: 1.3em;
+}
+
+.banner_buttons li {
+  width: 33%;
+  overflow: hidden;
+  float: left;
+  list-style-type: none;
+  background-color: #003366; /* Dark Blue */
+}
+
+.banner_buttons li button {
+  padding: 0;
+  border: none;
+  background-color: #003366; /* Dark Blue */
+  font-size: 1.15em;
+  color: #FFFFFF; /* White */
+  height: 94px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#flightSearchForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F7F7F7; /* Light Gray */
+  border: 1px solid #D1D1D1; /* Gray */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select,
+input[type="date"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #BDBDBD; /* Light Gray */
+  border-radius: 3px;
+}
+
+button {
+  background-color: #0072B5; /* Deep Sky Blue */
+  color: #FFFFFF; /* White */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005A9F; 
+}
+
+#flightResults {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #F7F7F7; 
+  border: 1px solid #D1D1D1; 
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  #flightSearchForm {
+      max-width: 100%;
+  }
+
+  
+}

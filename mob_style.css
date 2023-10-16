@@ -1,0 +1,165 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    position: static;
+    font-family: "Century Gothic", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.banner {
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    background-color: #0072B5; 
+    color: #FFFFFF;
+}
+
+.banner li {
+    list-style-type: none;
+    background-color: #0072B5; 
+}
+
+.banner li img {
+    max-width: 100%;
+    border-radius: 1.3em;
+}
+
+.banner_buttons li {
+    list-style-type: none;
+    background-color: #0072B5; 
+}
+
+.banner_buttons li button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #0072B5; 
+    font-size: 1.1em;
+    color: #FFFFFF;
+    height: 94px;
+    width: 100%;
+}
+
+/* Header (H1) styles */
+h1 {
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    color: #0072B5; 
+}
+
+/* Footer styles */
+.footer {
+    margin: 20px 0;
+    padding: 10px 0;
+    color: #0072B5; 
+    bottom: 0;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    background-color: #0072B5; 
+}
+
+/* Home page style */
+.info {
+    padding: 10px 0;
+    margin: 10px;
+    text-align: center;
+}
+
+#info_image img {
+    padding: 0 2px;
+    width: 80%;
+    height: auto;
+}
+
+#info_txt {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+#info_txt ol {
+    list-style-position: inside;
+    font-style: italic;
+}
+
+#info_txt a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#info_txt a:hover,
+a:active {
+    color: #0072B5; 
+    background-color: #FFFFFF;
+}
+
+
+h2 {
+    padding: 10px 5px;
+    margin: 10px 0;
+    font-size: 2em;
+    color: #0072B5; 
+}
+
+.status_table {
+    width: auto;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.status_table td {
+    height: 3.5em;
+    text-align: center;
+}
+
+.status_table tr > td:first-child,
+th {
+    margin: 2px;
+    background-color: #0072B5; 
+    font-style: italic;
+    color: #FFFFFF; 
+}
+
+.status_table tr:nth-child(odd) {
+    background-color: #0072B5; 
+}
+
+.status_table tr:hover {
+    background-color: #FFFFFF; 
+}
+
+
+form {
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+form > input,
+select {
+    margin: 10px;
+}
+
+#account {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    width: 180px;
+    background-color: #0072B5; 
+    color: #FFFFFF; 
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #0072B5; 
+    color: #FFFFFF; 
+}

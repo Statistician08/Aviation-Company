@@ -1,0 +1,181 @@
+/* Reset default styles and set font */
+* {
+    padding: 0;
+    margin: 0;
+    position: static;
+    font-family: "Century Gothic", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Banner styles */
+.banner {
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    height: 94px;
+    background-color: #0072B5; /* Deep Sky Blue */
+    color: #FFFFFF; /* White */
+}
+
+.banner li {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    background-color: #0072B5; /* Deep Sky Blue */
+}
+
+.banner li img {
+    max-width: 100%;
+    border-radius: 1.3em;
+}
+
+.banner_buttons li {
+    width: 33.33%;
+    overflow: hidden;
+    float: left;
+    list-style-type: none;
+    background-color: #0072B5; /* Deep Sky Blue */
+}
+
+.banner_buttons li button {
+    padding: 0;
+    border: none;
+    background-color: #0072B5; /* Deep Sky Blue */
+    font-size: 1.15em;
+    color: #FFFFFF; /* White */
+    height: 94px;
+    width: 100%;
+}
+
+/* Header (H1) styles */
+h1 {
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 3em;
+    font-style: oblique;
+    color: #0072B5; /* Deep Sky Blue */
+}
+
+/* Footer styles */
+.footer {
+    clear: both;
+    margin: 100px 0 0;
+    padding: 10px 0;
+    color: #0072B5; /* Deep Sky Blue */
+    bottom: 0;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    background-color: #0072B5; /* Deep Sky Blue */
+}
+
+/* Home page style */
+.info {
+    padding: 10px 0;
+    margin: 10px;
+}
+
+#info_image {
+    width: 50%;
+}
+
+#info_image img {
+    padding: 0 2px 20px 0;
+    float: left;
+    width: 80%;
+    height: auto;
+}
+
+#info_txt {
+    padding: 5px 0 5px 2px;
+    text-align: justify;
+    float: right;
+    width: 50%;
+}
+
+#info_txt ol {
+    list-style-position: inside;
+    font-style: italic;
+}
+
+#info_txt a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#info_txt a:hover,
+a:active {
+    color: #FFFFFF; /* White */
+    background-color: #0072B5; /* Deep Sky Blue */
+}
+
+#info_txt a:hover + #registration {
+    color: pink;
+}
+
+/* Status Levels page style */
+h2 {
+    padding: 10px 5px;
+    margin: 10px 0;
+    font-size: 2em;
+    color: #0072B5; /* Deep Sky Blue */
+}
+
+.status_table {
+    width: auto;
+    padding: 10px 40px;
+    margin: 10px 0;
+}
+
+.status_table td {
+    height: 3.5em;
+    text-align: center;
+}
+
+.status_table tr > td:first-child,
+th {
+    margin: 2px;
+    background-color: #0072B5; /* Deep Sky Blue */
+    font-style: italic;
+    color: #FFFFFF; /* White */
+}
+
+.status_table tr:nth-child(odd) {
+    background-color: #0072B5; /* Deep Sky Blue */
+}
+
+.status_table tr:hover {
+    background-color: #c9c9c9;
+}
+
+/* Registration page style */
+form {
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+form > input,
+select {
+    margin: 10px;
+}
+
+#account {
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    width: 180px;
+    background-color: #0072B5; /* Deep Sky Blue */
+    color: #FFFFFF; /* White */
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #0072B5; /* Deep Sky Blue */
+    color: #FFFFFF; /* White */
+}

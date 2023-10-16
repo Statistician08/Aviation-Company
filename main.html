@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add your styles for the toggle card here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .banner img {
+            max-width: 100%;
+        }
+
+        .banner_buttons {
+            list-style: none;
+            padding: 0;
+        }
+
+        .banner_buttons li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .banner_buttons a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .banner_buttons a:hover {
+            color: #007bff;
+        }
+
+        .toggle-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .toggle-button button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .toggle-button button:hover {
+            background-color: #0056b3;
+        }
+
+        .toggle-content {
+            display: none;
+        }
+    </style>
+    <title>Home Page - Ikarus Airlines</title>
+</head>
+<body>
+    <div class="banner">
+        <ul class="banner_list">
+            <!-- Airline banner -->
+            <li>
+                <img src="images/banner.jpg" alt="Ikarus Airlines Logo">
+            </li>
+            <!-- Banner buttons: home, flight booking, registration -->
+            <li>
+                <ul class="banner_buttons">
+                    <li id="home">
+                        <a href="main.html">HOME</a>
+                    </li>
+                    <li id="flight_booking">
+                        <a href="flight_booking.html">BOOKING</a>
+                    </li>
+                    <li id="register">
+                        <a href="registration.html">REGISTRATION</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="toggle-card">
+        <div class="toggle-button">
+            <button id="toggleButton">Toggle Content</button>
+        </div>
+        <div class="toggle-content">
+            <h2>1. Flight Booking and Information:</h2>
+            <ul>
+                <li>Implement a flight booking system with search and reservation capabilities.</li>
+                <li>Include detailed flight schedules, destinations, and pricing.</li>
+            </ul>
+
+            <h2>2. Fleet Information:</h2>
+            <ul>
+                <li>Showcase the company's aircraft fleet with photos, specifications, and seating layouts.</li>
+            </ul>
+
+            <h2>3. Travel Guides and Tips:</h2>
+            <ul>
+                <li>Offer travel guides for various destinations, including information on attractions, accommodations, and local culture.</li>
+            </ul>
+
+            <h2>4. Loyalty Programs:</h2>
+            <ul>
+                <li>Promote frequent flyer programs and incentives for loyal customers.</li>
+            </ul>
+
+            <h2>5. Safety and Security:</h2>
+            <ul>
+                <li>Highlight the company's commitment to passenger safety and security measures.</li>
+            </ul>
+
+            <h2>6. Customer Support and FAQs:</h2>
+            <ul>
+                <li>Provide customer support contact details and a comprehensive FAQ section.</li>
+            </ul>
+
+            <h2>7. News and Updates:</h2>
+            <ul>
+                <li>Share company news, route expansions, and travel advisories.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.getElementById("toggleButton");
+            const toggleContent = document.querySelector(".toggle-content");
+        
+            toggleButton.addEventListener("click", function() {
+                if (toggleContent.style.display === "none" || toggleContent.style.display === "") {
+                    toggleContent.style.display = "block";
+                } else {
+                    toggleContent.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
